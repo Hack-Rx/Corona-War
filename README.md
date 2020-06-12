@@ -33,4 +33,13 @@ Fuctions -
 
 # Commit 5
 
-1.Plotting, Analysing, Scaling, transformation of dataset 
+Plotting, Analysing, Scaling, transformation of dataset 
+
+# Commit 6
+
+Added 2 files (stat.php, Read.js)
+
+Functions - 
+
+1. stat.php : Contains the code for displaying the data from the Firebase when the User enters the key.
+2. Read.js : Contains the backend code for retreiving the fields of the entered key from the Firebase database.
