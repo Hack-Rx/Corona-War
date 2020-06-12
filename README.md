@@ -43,3 +43,10 @@ Functions -
 
 1. stat.php : Contains the code for displaying the data from the Firebase when the User enters the key.
 2. Read.js : Contains the backend code for retreiving the fields of the entered key from the Firebase database.
+
+# Commit 7
+modified 1 file (query.py)
+
+Fuctions - 
+
+1. Implemented twilio api to send text message to users the key generated and also updating them about the updates on the inference results. 
