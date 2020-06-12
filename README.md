@@ -50,3 +50,8 @@ modified 1 file (query.py)
 Fuctions - 
 
 1. Implemented twilio api to send text message to users the key generated and also updating them about the updates on the inference results. 
+
+#commit 8 
+1.added form and result pages
+2.integrated them with the homepage
+3.integrated them with firebase
