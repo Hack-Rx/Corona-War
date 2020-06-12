@@ -29,3 +29,6 @@ Fuctions -
 
 1. Python Code to query the database - Firebase.
 2. Update the variable to send to the model for generating the inference part
+
+
+
