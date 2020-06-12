@@ -66,3 +66,6 @@ Fuctions -
 
 1. Excel sheet made using a webcrawler for the website : https://covid.uhcitp.in/status/dashboard
 2. Using the python script upload the data to the firebase-database.
+
+# Commit 11
+1.Selecting the model and fine tuning 
