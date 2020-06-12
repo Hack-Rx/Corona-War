@@ -31,4 +31,6 @@ Fuctions -
 2. Update the variable to send to the model for generating the inference part
  
 
+# Commit 5
 
+1.Plotting, Analysing, Scaling, transformation of dataset 
