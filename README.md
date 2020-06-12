@@ -34,3 +34,10 @@ Fuctions -
 # Commit 5
 
 1.Plotting, Analysing, Scaling, transformation of dataset 
+
+# Commit 6
+modified 1 file (query.py)
+
+Fuctions - 
+
+1. Added the twilio api for generating and sending sms messages to the user about the key and the updates regarding the inference.

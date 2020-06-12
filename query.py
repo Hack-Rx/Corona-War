@@ -1,9 +1,9 @@
 import requests
 import json
-
-# account_sid = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-# auth_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-# client = Client(account_sid, auth_token)
+from twilio.rest import Client
+account_sid = 'ACb064b11f5a39b82f2be5d0370becdeb6'
+auth_token = '038790990e9a138840a7b1515c6d99a2'
+client = Client(account_sid, auth_token)
 r = requests.get(
     "https://corona-tracker-22cc2.firebaseio.com/messages.json?orderBy=%22$key%22&limitToLast=1")
 keys = r.json()
@@ -69,4 +69,9 @@ for key in keys:
                      gender_m,
                      gender_f,
                      gender_n]]
-print(predict_data)
+print(key_data)
+message = client.messages.create(
+    body="The key is : " + key_data,
+    from_='+12057075331',
+    to=phone_num
+)
