@@ -13,6 +13,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  #textarea{
+    max-width: 100%;
+  }
   .door-left {
     border-bottom:  5px solid #ff1e56;
   }
@@ -530,6 +533,7 @@ color:white;
 
 .containerr{
   margin-top: 100px;
+  margin-bottom: 35px;
 
 
 }
@@ -610,5 +614,33 @@ section button:hover{
   /* height:300px; */
   margin-bottom: 30px;
     border: 2px solid #ff1e56;
+
+}
+.radio-inline{
+  margin:0 14px;
+
+}
+iframe{
+  height:600px;
+
+
+}
+.tracker{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group option{
+  color:white;
+
+
+}
+.center-form{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 90px;
+
 
 }
