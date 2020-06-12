@@ -1,4 +1,5 @@
 # Corona-War
+
 # Commit 1 
 added homepage
 added corona cases tracker
@@ -21,5 +22,10 @@ take user information as well as their symptoms response.
 4. Main.js : This has two functions, First is to take the entries of the form and update it in the Firebase Realtime Database.
 Second Function is to generate a unique key ID for the User which can be used for retaining the results stored in the Firebase by the AI Model.
 
+# Commit 4
+added 1 file (query.py)
 
+Fuctions - 
 
+1. Python Code to query the database - Firebase.
+2. Update the variable to send to the model for generating the inference part
