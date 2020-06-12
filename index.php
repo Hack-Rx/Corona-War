@@ -49,6 +49,9 @@
           <a class="nav-link " href="#contact">Contact</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link " href="form.php">Form</a>
+        </li>
+        <li class="nav-item">
            <div id="google_translate_element" ></div>
         </li>
       </ul>
@@ -64,7 +67,7 @@
     </div>
   </div>
   <!-- before about -->
-  <div class="row">
+  <div class="row" id="symp">
 
 
     <div class="before-about col-xs-12 ">
