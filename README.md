@@ -19,7 +19,7 @@ take user information as well as their symptoms response.
 2. Header.php : Integrated accessibility features along with a universal Language Translator and a Dark Mode feature.
 3. Footer.php : Credentials and basic footer.
 4. Main.js : This has two functions, First is to take the entries of the form and update it in the Firebase Realtime Database.
-Second Function is to generate a unique key ID for the User which can be used for retaining the results stored in the Firebase from the AI Model.
+Second Function is to generate a unique key ID for the User which can be used for retaining the results stored in the Firebase by the AI Model.
 
 
 
