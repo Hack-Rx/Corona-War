@@ -87,3 +87,11 @@ Fuctions -
 1. Integrated sendgrid api to send emails.
 2. Updated the code-visibilty to proper formattings.
 
+# Commit 14
+Modified 1 file and added 1 file (firebase_query.py & joblib_modelv3)
+
+Fuctions - 
+
+1. Updated the training data to work on weightage based methods of the various features.
+2. Updated the code in firebase_query to send the correct values to firebase.
+

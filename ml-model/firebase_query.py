@@ -2,10 +2,13 @@ import requests
 import json
 from twilio.rest import Client
 from joblib import load
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 account_sid = 'ACb064b11f5a39b82f2be5d0370becdeb6'
 auth_token = '038790990e9a138840a7b1515c6d99a2'
 client = Client(account_sid, auth_token)
+SENDGRID_API_KEY = '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'
 r = requests.get(
     "https://corona-tracker-22cc2.firebaseio.com/messages.json?orderBy=%22$key%22&limitToLast=1")
 keys = r.json()
@@ -13,11 +16,19 @@ predict_data = [[]]
 phone_num = "trial"
 key_data = "asdasd"
 patient_name = "Default"
+patient_email = "default@gmail.com"
 headers = {"content-type": "application/json; charset=UTF-8"}
+no_symptom = 0
+none_exp = 0
+pains = 0
+runny_nose = 0
+diarrhea = 0
+sore_throat = 0
 for key in keys:
     key_data = key
     fever = int(keys[key]['fever'])
     patient_name = keys[key]['name']
+    patient_email = keys[key]['email']
     tiredness = int(keys[key]['tiredness'])
     dry_cough = int(keys[key]['dryCough'])
     difficult_breathing = int(keys[key]['difficultyBreathing'])
@@ -80,11 +91,38 @@ message = client.messages.create(
     from_='+12057075331',
     to=phone_num
 )
-model = load('joblib_modelv2')
-inference = (model.predict(predict_data))[0]
+message = Mail(
+    from_email='subhamagrawal861@gmail.com',
+    to_emails=patient_email,
+    subject='Key Details',
+    html_content='<p>Hello, ' +
+    patient_name +
+    '</p> <p><br></p> <p>Greetings from Team Solace</p> <p><br></p> <p>Your unique key id is : ' +
+    key_data +
+    '</p> <p><br></p> <p>Have a good day.</p> <p><br></p> <p>Your Friends</p> <p>Team Solace</p>')
+sg = SendGridAPIClient(SENDGRID_API_KEY)
+response = sg.send(message)
+print (response.status_code)
+model = load('joblib_modelv3')
+sev = 0
+if no_symptom == 1 or none_exp == 1:
+    if no_symptom == 0 or none_exp == 1:
+        sev = 4
+    else:
+        sev = 3
+elif pains == 1 or runny_nose == 1 or diarrhea == 1 or sore_throat == 1:
+    sev = 1
+elif pains == 0 and runny_nose == 0 and diarrhea == 0 and sore_throat == 0:
+    sev = 2
+else:
+    predicted_value = (model.predict(predict_data))[0]
+    if predicted_value == 1:
+        sev = 1
+    else:
+        sev = 2
 severeity = "None"
 friendly_cmd = "trial"
-if (inference == 1):
+if (sev == 1):
     severeity = "Severe"
     friendly_cmd = "Please look for our suggestions regarding the hospitals in the interface. Thank You."
     r = requests.get(
@@ -192,7 +230,7 @@ if (inference == 1):
             headers=headers,
             data=json.dumps(
                 hospitals['hopital_bed_vacant']).encode("utf-8")))
-elif (inference == 2):
+elif (sev == 2):
     severeity = "Moderate"
     friendly_cmd = "Please look for our suggestions regarding the hospitals in the interface. Thank You."
     r = requests.get(
@@ -300,10 +338,10 @@ elif (inference == 2):
             headers=headers,
             data=json.dumps(
                 hospitals['hopital_bed_vacant']).encode("utf-8")))
-elif (inference == 3):
+elif (sev == 3):
     severeity = "Mild"
     friendly_cmd = "You are safe right now. But be careful and follow government procedures for home quarantine, just in case !!"
-elif (inference == 4):
+elif (sev == 4):
     severeity = "No Risk"
     friendly_cmd = "Hey, You are fit and ready to rock and roll. But do  your part in going through this crisis by staying at home."
 print(
@@ -326,3 +364,16 @@ message = client.messages.create(
     body='Hello ' + patient_name +
     ', The inference is ready. Please check the results in the website. Thank You from Team Solace',
     from_='+12057075331', to=phone_num)
+message = Mail(
+    from_email='subhamagrawal861@gmail.com',
+    to_emails=patient_email,
+    subject='Inference Updates',
+    html_content='<p>Hello, ' +
+    patient_name +
+    '</p> <p><br></p> <p>Greetings from Team Solace</p> <p><br></p> <p>Your Inference has been updated in the webiste. Please have a look using your key - ' +
+    key_data +
+    '</p> <p><br></p> <p>Have a good day.</p> <p><br></p> <p>Your Friends</p> <p>Team Solace</p>')
+sg = SendGridAPIClient(SENDGRID_API_KEY)
+response = sg.send(message)
+print (response.status_code)
+
