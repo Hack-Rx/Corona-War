@@ -52,6 +52,9 @@
           <a class="nav-link " href="form.php">Form</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link " href="stat.php">View Status</a>
+        </li>
+        <li class="nav-item">
            <div id="google_translate_element" ></div>
         </li>
       </ul>
@@ -87,7 +90,7 @@
 
   <div class="row card-container card-deck">
 
-    <div class="card cardd col-xs-12 col-md-4">
+    <div class="card cardd col-xs-12 col-sm-6 col-md-4">
       <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
       <div class="card-body">
         <h5 class="card-title">Most common symptoms</h5>
@@ -95,22 +98,21 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item" onclick="display()">fever <i class="fas fa-chevron-circle-down menu-down"></i>
           <div class="sub-menu">
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+            <P>A fever is a body temperature that is higher than normal. A normal temperature can vary from person to person, but it is usually around 98.6 F. A fever is not a disease. It is usually a sign that your body is trying to fight an illness or infection. Infections cause most fevers.</P>
           </div>
 
         </li>
 
         <li class="list-group-item">dry cough <i class="fas fa-chevron-circle-down menu-down"></i>
           <div class="sub-menu">
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+            <P>A cough is a reflex action that clears your airway of irritants and mucus. There are two types of cough: productive and nonproductive. A productive cough produces phlegm or mucus, clearing it from the lungs. A nonproductive cough, also known as a dry cough, doesn’t produce phlegm or mucus.
+</P>
           </div>
         </li>
         <li class="list-group-item">tiredness <i class="fas fa-chevron-circle-down menu-down"></i>
           <div class="sub-menu">
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+            <P>  Fatigue is a term used to describe an overall feeling of tiredness or lack of energy. It isn’t the same as simply feeling drowsy or sleepy. When you’re fatigued, you have no motivation and no energy. Being sleepy may be a symptom of fatigue, but it’s not the same thing.
+</P>
           </div>
         </li>
       </ul>
@@ -121,7 +123,7 @@
     </div>
 
 
-    <div class="card cardd col-xs-12 col-md-4">
+    <div class="card cardd col-xs-12 col-sm-6 col-md-4">
       <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
       <div class="card-body">
         <h5 class="card-title">Less common symptoms</h5>
@@ -129,44 +131,41 @@
       <ul class="list-group list-group-flush">
         <li class="list-group-item">aches and pains <i class="fas fa-chevron-circle-down menu-down"></i>
           <div class="sub-menu">
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+          <P>Body aches are a common symptom of many conditions. The flu is one of the most well-known conditions that can cause body aches. Aches can also be caused by your everyday life, especially if you stand, walk, or exercise for long periods of time.
+</P>
     </div>
     </li>
     <li class="list-group-item">sore throat <i class="fas fa-chevron-circle-down menu-down"></i>
       <div class="sub-menu">
-      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+      <P>A sore throat is a painful, dry, or scratchy feeling in the throat.
+</P>
   </div>
   </li>
   <li class="list-group-item">diarrhoea <i class="fas fa-chevron-circle-down menu-down"></i>
     <div class="sub-menu">
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+    <P>Diarrhoea is when your bowel movements become loose or watery. The definition of diarrhoea is passing loose or watery bowel movements 3 or more times in a day (or more frequently than usual). Diarrhoea occurs when the lining of the intestine is unable to absorb fluid, or it actively secretes fluid.
+</P>
     </div>
   </li>
   <li class="list-group-item">conjunctivitis <i class="fas fa-chevron-circle-down menu-down"></i>
     <div class="sub-menu">
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+    <P>Pink eye (conjunctivitis) is an inflammation or infection of the transparent membrane (conjunctiva) that lines your eyelid and covers the white part of your eyeball. When small blood vessels in the conjunctiva become inflamed, they're more visible</P>
     </div>
   </li>
   <li class="list-group-item">headache <i class="fas fa-chevron-circle-down menu-down"></i>
     <div class="sub-menu">
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+    <P>A headache can be a sign of stress or emotional distress, or it can result from a medical disorder, such as migraine or high blood pressure, anxiety, or depression. It can lead to other problems.</P>
     </div>
   </li>
   <li class="list-group-item">loss of taste or smell <i class="fas fa-chevron-circle-down menu-down"></i>
     <div class="sub-menu">
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+    <P>Symptoms can vary. Some people may not be able to smell or taste anything. Others may have a reduced ability to smell or taste certain things that are sweet, sour, bitter, or salty. In some cases, normally pleasant tastes or smells may become unpleasant
+</P>
     </div>
   </li>
   <li class="list-group-item">a rash on skin, or  discolouration <br> of fingers or toes<i class="fas fa-chevron-circle-down menu-down"></i>
     <div class="sub-menu">
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+    <P>Discolored skin patches are irregular areas where there are changes in skin color. They are a common problem with a wide array of potential causes.Some of the more common causes for changes in skin color are illness, injury, and inflammatory problems.</P>
     </div>
 
   </li>
@@ -179,7 +178,7 @@
 
 
 
-  <div class="card cardd col-xs-12 col-md-4">
+  <div class="card cardd col-xs-12 col-sm-12 col-md-4">
     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
     <div class="card-body">
       <h5 class="card-title">Serious symptoms</h5>
@@ -187,17 +186,18 @@
     <ul class="list-group list-group-flush">
       <li class="list-group-item">difficulty breathing or shortness of breath <i class="fas fa-chevron-circle-down menu-down"></i>
         <div class="sub-menu">
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+          <P>A person who is having difficulty breathing feels short of breath, has trouble inhaling or exhaling, or feels as though they cannot get enough oxygen.</P>
         </div>
       </li>
       <li class="list-group-item">chest pain or pressure <i class="fas fa-chevron-circle-down menu-down"></i>
         <div class="sub-menu">
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+          <P>Angina is chest pain or discomfort caused when your heart muscle doesn't get enough oxygen-rich blood. It may feel like pressure or squeezing in your chest. The discomfort also can occur in your shoulders, arms, neck, jaw, or back. Angina pain may even feel like indigestion.
+</P>
         </div>
       </li>
       <li class="list-group-item">loss of speech or movement <i class="fas fa-chevron-circle-down menu-down"></i>
         <div class="sub-menu">
-          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+          <P>Lack of speech or absence of speech can occur due to both medical and psychological conditions. Absent speech or mutism can occur as a sign of catatonia, a state in which one is unresponsive but otherwise awake.</P>
         </div>
       </li>
     </ul>

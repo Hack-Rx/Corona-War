@@ -80,13 +80,16 @@
             <a class="nav-link " href="#contact">Contact</a>
           </li>
           <li class="nav-item">
+          <a class="nav-link " href="stat.php">View Status</a>
+        </li>
+          <li class="nav-item">
              <div id="google_translate_element" ></div>
           </li>
         </ul>
       </div>
     </nav>
     <div class="containerr container ">
-    <h1 style="color: #ff1e56;text-align:center">Patient Form</h1>
+    <h1 style="color: #00b7c2;text-align:center">Patient Form</h1>
          </div>
     <div class="container  center-form">
       <!-- <h2>Patient Details:- </h2> -->
@@ -201,7 +204,7 @@
                               </div>
                           </div>
 
-                          <h1 style="color: #ff1e56;text-align:center; width:100%; margin:30px 0"> Symptoms</h2>
+                          <h1 style="color: #00b7c2;text-align:center; width:100%; margin:30px 0"> Symptoms</h2>
                           <div class="form-group row">
               
               <!-- <br /> -->

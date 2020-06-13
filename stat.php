@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php //include 'header.php';?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -63,11 +62,12 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php#symp">Prevention</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#stats" >Stats</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link " href="#contact">Contact</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link " href="form.php">form</a>
           </li>
           <li class="nav-item">
              <div id="google_translate_element" ></div>
@@ -78,52 +78,82 @@
     <div class="sunrise">
 <section class="row form-cont">
 	<div class="submit-form col-xs-12 col-sm-3">
-		<h2><span class="color">Enter</span> <span style="color:#ffe277">User  ID</span> </h2>
+		<h2>Enter User  ID </h2>
 		<input type ="text" id="user" required="required"><br>
 		 <button style="margin-top:10px" id="submit" type="submit" class="btn btn-primary" name="submit" onclick="getdata();">Search..</button>
       </div>
     </section>
-    
-<section class="row form-cont">
+   <div class="col-xs-12 col-md-12">
+    <p style="margin-top:50px; text-align:center">Susceptibility Rate:  <strong id="names"></strong></p><br>
+  </div> 
+<section class="row form-contt card-deck">
+  
 
-  <div class="card col-xs-12 col-sm-3 result-card" >
-  <div class="card-header" style="text-align:center;font-size:1.4rem;">
+  <div class="card col-xs-12 col-sm-4 result-card" >
+  <div class="card-header" style="font-size:1.4rem;">
     Results
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><p>Corona?:  <strong id="names"></strong></p></li>
-    <li class="list-group-item"><p>Hospital:  <strong id="genders"></strong></p></li>
-    <li class="list-group-item"><p>Doctor:  <strong id="ages"></strong></p></li>
+    <li class="list-group-item"><p>Hospital 1 - name:  <strong id="genders"></strong></p></li>
+    <li class="list-group-item">	<p>Hospital 1 - address: <strong id="h1address"></strong></p></li>
+    <li class="list-group-item">	<p>Hospital 1 - contact no: <strong id="h1contact"></strong></p>
+</li>
+<li class="list-group-item">		<p>Hospital 1 - bed count: <strong id="h1bed"></strong></p>
+</li>
   </ul>
 </div>
+<div class="card col-xs-12 col-sm-4 result-card" >
+  <div class="card-header" style="font-size:1.4rem;">
+    Results
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">	<p>Hospital 2 - name: <strong id="h2name"></strong></p>
+</li>
+    <li class="list-group-item">		<p>Hospital 2 - address: <strong id="h2address"></strong></p></li>
+    <li class="list-group-item">	<p>Hospital 2 - contact no: <strong id="h2contact"></strong></p>
 
+</li>
+<li class="list-group-item">	<p>Hospital 2 - bed count: <strong id="h2bed"></strong></p>
+
+</li>
+  </ul>
+</div>
+<div class="card col-xs-12 col-sm-4 result-card" >
+  <div class="card-header" style="font-size:1.4rem;">
+    Results
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">	<p>Hospital 3 - name: <strong id="h3name"></strong></p>
+
+</li>
+    <li class="list-group-item">		<p>Hospital 3 - address: <strong id="h3address"></strong></p>
+</li>
+    <li class="list-group-item">	<p>Hospital 3 - contact no: <strong id="h3contact"></strong></p>
+
+</li>
+<li class="list-group-item">	<p>Hospital 3 - bed count: <strong id="h3bed"></strong></p>
+
+
+</li>
+  </ul>
+</div>
+<div class="col-xs-12 col-sm-12" style="text-align:center;margin-top:20px">
+  	<p>Suggestions : <strong id="suggestions"></strong></p>
+
+</div>
 	<!-- <p style="margin-top:50px">Corona?:  <strong id="names"></strong></p><br>
 	<p>Hospital:  <strong id="genders"></strong></p><br>
 	<p>Doctor:  <strong id="ages"></strong></p><br> -->
 
 </section>
 </div>
-=======
-<?php include 'header.php';?>
-
-<center>
-	<h2>Enter User ID :</h2>
-	<input type ="text" id="user" required="required"><br>
-	 <button style="margin-top:10px" id="submit" type="submit" class="btn btn-primary" name="submit" onclick="getdata();">Search..</button>
-</center>
-<center>
-	<p style="margin-top:50px">Corona?:  <strong id="names"></strong></p><br>
-	<p>Hospital:  <strong id="genders"></strong></p><br>
-	<p>Doctor:  <strong id="ages"></strong></p><br>
-
-</center>
-
->>>>>>> ceaedbfaa7d1f5527fa52590207116e2b9dd5d28
 
 <!-- <iframe style="width:120px;height:240px;margin-top: -10px;margin-bottom: 20px; margin-left: 520px" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=ayoun8100-21&marketplace=amazon&region=IN&placement=B0899S5DNN&asins=B0899S5DNN&linkId=e4eedfb11cc409ba48a84f6c57dede3f&show_border=true&link_opens_in_new_window=true"></iframe>
 <iframe style="width:120px;height:240px;margin-top: -10px;margin-bottom: 20px; margin-left: 150px" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=ayoun8100-21&marketplace=amazon&region=IN&placement=B0851H66G4&asins=B0851H66G4&linkId=2469a54b191b28394b304ecb32c7bf8a&show_border=true&link_opens_in_new_window=true"></iframe> -->
 
-<<<<<<< HEAD
+<div class="iframe-container">
+<iframe class="responsive-iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4270.045010118016!2d77.00603671499174!3d10.885008560156074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85aab2034f569%3A0xc05985234d5685d0!2sKarpagam%20Hospital!5e1!3m2!1sen!2sin!4v1592009532732!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
 <div class="row footer" id="contact">
   <div class=" col-xs-12 col-md-12 footer-top">
     <ul>
@@ -148,16 +178,11 @@
  <p>Made with ❤️   &#xa9;2020 Solace</p>
   </div>
 </div>
-=======
-
-
->>>>>>> ceaedbfaa7d1f5527fa52590207116e2b9dd5d28
 
 <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
 <script src="Read.js"></script>
-<<<<<<< HEAD
 <script type="text/javascript">
 
 function googleTranslateElementInit() {
@@ -169,7 +194,3 @@ function googleTranslateElementInit() {
 </body>
 </html>
 <?php //include 'footer.php';?>
-=======
-
-<?php include 'footer.php';?>
->>>>>>> ceaedbfaa7d1f5527fa52590207116e2b9dd5d28
