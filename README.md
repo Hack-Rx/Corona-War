@@ -94,5 +94,10 @@ Fuctions -
 
 1. Updated the training data to work on weightage based methods of the various features.
 2. Updated the code in firebase_query to send the correct values to firebase.
-# commit 15
+# Commit 15
 final commit for front end  and backend
+
+# Commit 16
+Uploaded 1 file (Solace(Final PDF).pdf:
+
+Function : presentation for pitching
