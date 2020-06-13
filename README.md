@@ -51,12 +51,12 @@ Fuctions -
 
 1. Implemented twilio api to send text message to users the key generated and also updating them about the updates on the inference results. 
 
-# commit 8 
+# Commit 8 
 1. added form and result pages
 2. integrated them with the homepage
 3. integrated them with firebase
 
-# commit 9
+# Commit 9
 1. made the form page responsive
  
 # Commit 10
@@ -69,3 +69,13 @@ Fuctions -
 
 # Commit 11
 1.Selecting the model and fine tuning 
+
+# Commit 12
+Added 2 files (firebase_query.py & joblib_modelv2.joblib)
+
+Fuctions - 
+
+1. The firebase_query.py takes the form's input and then passes it to our ml model. The ML model then generates a inference out of the data and  pushes it to firebase.
+2. The twilio api is used to send messsages to the users about the key details and once the inference in updated. 
+3. The model's file is generated from the joblib library which exports the model and then it can be used in various scripts. 
+
