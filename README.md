@@ -79,3 +79,11 @@ Fuctions -
 2. The twilio api is used to send messsages to the users about the key details and once the inference in updated. 
 3. The model's file is generated from the joblib library which exports the model and then it can be used in various scripts. 
 
+# Commit 13
+Modified 1 file (query.py)
+
+Fuctions - 
+
+1. Integrated sendgrid api to send emails.
+2. Updated the code-visibilty to proper formattings.
+
