@@ -98,6 +98,6 @@ Fuctions -
 final commit for front end  and backend
 
 # Commit 16
-Uploaded 1 file (Solace(Final PDF).pdf:
+Uploaded 1 file (Solace(Final PDF)).pdf:
 
 Function : presentation for pitching
